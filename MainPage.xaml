@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Numero_da_Sorte.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MainPage">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
+            <Image
+                HeightRequest="115"
+                Source="logo_green.png"
+                WidthRequest="74" />
+            <Label
+                x:Name="nameApp"
+                Margin="0,20,0,120"
+                HorizontalOptions="Center"
+                IsVisible="true"
+                Text="Número da Sorte"
+                TextColor="#00AB37"
+                VerticalOptions="Center" />
+            <VerticalStackLayout x:Name="containerLuckNumbers" IsVisible="false">
+                <Label
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Center"
+                    Text="Os Números da Sorte são: " />
+                <HorizontalStackLayout
+                    Margin="0,70"
+                    HorizontalOptions="Center"
+                    Spacing="5">
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber01"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber02"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber03"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber04"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber05"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="luckNumber06"
+                            Padding="10,5"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                </HorizontalStackLayout>
+                <Label
+                    Margin="0,0,0,50"
+                    HorizontalOptions="Center"
+                    Text="Boa Sorte!" />
+            </VerticalStackLayout>
+
+            <Button
+                x:Name="btnAction"
+                Clicked="OnGenerateLuckNumbers"
+                HorizontalOptions="Center"
+                IsVisible="true"
+                Text="Gerar Número da Sorte" />
+
+            <Button
+                x:Name="btnVoltar"
+                Margin="0,20"
+                Clicked="Voltar"
+                HorizontalOptions="Center"
+                IsVisible="false"
+                Text="Voltar" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
